@@ -23,3 +23,22 @@ courier management system
 			2. delivery emp delivers it
 		3. For delivery
 			1. the parcel is assigned a van/driver
+
+Domain model:
+Conceptual class categories:
+	Physical entities: Parcel
+	spec: parcel description
+	places: warehouses, src, dest
+	transactions: payment
+	roles(people): processor, manager, delivery person, (customer)
+	events: pickedup, delivered, in transit
+	container: warehouses, parcel_tracking
+	in container: parcel, location, arr_time, dept_time
+	
+	delivery job
+	- route
+	- parcels
+	- vehicle
+	- del. person
+	- status
+	
