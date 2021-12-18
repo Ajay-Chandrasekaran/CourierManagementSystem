@@ -1,5 +1,5 @@
 package com.ska.CourierManagementSystem.Models;
 
-public interface Employee {
+public class Customer {
 
 }
