@@ -8,8 +8,8 @@ import javax.persistence.Id;
 public class ParcelDescription {
 
     private int parcelDescID;
-    private double weightRange;
-    private double sizeRange;
+    private String weightRange;
+    private String sizeRange;
     private double basePrize;
     private String serviceType;
 
@@ -23,19 +23,19 @@ public class ParcelDescription {
         this.parcelDescID = parcelDescID;
     }
 
-    public double getWeightRange() {
+    public String getWeightRange() {
         return weightRange;
     }
 
-    public void setWeightRange(double weightRange) {
+    public void setWeightRange(String weightRange) {
         this.weightRange = weightRange;
     }
 
-    public double getSizeRange() {
+    public String getSizeRange() {
         return sizeRange;
     }
 
-    public void setSizeRange(double sizeRange) {
+    public void setSizeRange(String sizeRange) {
         this.sizeRange = sizeRange;
     }
 

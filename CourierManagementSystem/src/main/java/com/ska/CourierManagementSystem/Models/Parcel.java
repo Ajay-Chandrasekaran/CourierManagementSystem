@@ -14,6 +14,28 @@ public class Parcel {
     private Payment paymentDetails;
     private ParcelDescription parcelDescription;
     private TrackingInformation trackingInformation;
+    private Warehouse wareHouseDetails;
+    private DeliveryJob deliveryJob;
+
+    @ManyToOne
+    @JoinColumn(name = "deliveryJobID")
+    public DeliveryJob getDeliveryJob() {
+        return deliveryJob;
+    }
+
+    public void setDeliveryJob(DeliveryJob deliveryJob) {
+        this.deliveryJob = deliveryJob;
+    }
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "wareHouseID")
+    public Warehouse getWareHouseDetails() {
+        return wareHouseDetails;
+    }
+
+    public void setWareHouseDetails(Warehouse wareHouseDetails) {
+        this.wareHouseDetails = wareHouseDetails;
+    }
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "trackingID")
