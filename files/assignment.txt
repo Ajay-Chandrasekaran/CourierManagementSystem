@@ -36,9 +36,6 @@ Conceptual class categories:
 	in container: parcel, location, arr_time, dept_time
 	
 	delivery job
-	- route
 	- parcels
-	- vehicle
-	- del. person
-	- status
+	- 
 	
